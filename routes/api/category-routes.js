@@ -43,8 +43,14 @@ router.get("/:id", async (req, res) => {
 
 // I NEED TO DO POST TO CREATE A NEW CATEGORY
 
-router.post("/", (req, res) => {
+router.post("/", async (req, res) => {
   // create a new category
+  try {
+    const category = await Category.create(req.body);
+    res.json(category);
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 router.put("/:id", async (req, res) => {
