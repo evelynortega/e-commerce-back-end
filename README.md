@@ -38,6 +38,6 @@ Use Insomia to test the routes.
 
 <h2 id="walkthrough">Walkthrough Video Link</h2>
 
-[Watch the walkthrough video !](https://drive.google.com/file/d/1soJXxIiZ51BHP5XomRIK7tnl6EGOOqr3/view?usp=sharing)
+[Watch the walkthrough video !](https://drive.google.com/file/d/1av2mT5y1jBOAzYGzjROQH8WDzjYm7znc/view)
 
-![Video Screenshot](./)
+![Video Screenshot](<./Assets/Screenshot%20(70).png>)
