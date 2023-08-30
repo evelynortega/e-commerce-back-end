@@ -24,7 +24,7 @@ router.get("/", async (req, res) => {
 });
 
 // get one product
-router.get("/:id", withAuth, async (req, res) => {
+router.get("/:id", async (req, res) => {
   try {
     const product = await Product.findOne({
       where: {
@@ -122,19 +122,18 @@ router.put("/:id", (req, res) => {
     });
 });
 
-router.delete("/:id"),
-  async (req, res) => {
-    // delete one product by its `id` value
-    try {
-      const product = await Product.destory({
-        where: {
-          id: req.params.id,
-        },
-      });
-      res.json(product);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+router.delete("/:id", async (req, res) => {
+  // delete one product by its `id` value
+  try {
+    const product = await Product.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+    res.json(product);
+  } catch (error) {
+    console.log(error);
+  }
+});
 
 module.exports = router;
